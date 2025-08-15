@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 812eb2d5bbd816a48881f4889f44250c, type: 3}
   m_Name: CH_Aline
   m_EditorClassIdentifier: Assembly-CSharp::CharacterInfo
-  CH_Name: 
-  CH_Sprite: {fileID: 0}
-  CH_Class: 
-  CH_Ability1_Name: 
-  CH_Ability2_Name: 
-  CH_Ability1_Description: 
-  CH_Ability2_Description: 
+  CH_Name: Aline
+  CH_Sprite: {fileID: 21300000, guid: d5e57662105d3344a90509ec3f6dc7e3, type: 3}
+  CH_Class: Healer
+  CH_Ability1_Name: 'Mass Heal :'
+  CH_Ability2_Name: 'Rise Again :'
+  CH_Ability1_Description: Heals Every Menber Of The Group
+  CH_Ability2_Description: Resurects A Fallen Ally
