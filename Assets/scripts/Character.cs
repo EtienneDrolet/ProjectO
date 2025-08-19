@@ -19,19 +19,10 @@ public class Character : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
     }
 
-    private void OnCollisionEnter2D(UnityEngine.Collision2D collision)
-    {
-        
 
-        if (collision.collider.GetComponent<DamagingArea>())
-        {
-            ChangeHP(collision.collider.GetComponent<DamagingArea>().GetDMG());
-        }
-    }
 
-    private void ChangeHP(int hpChange)
+    public void ChangeHP(int hpChange)
     {
-        print("bang");
         HP += hpChange;
 
         Dictionary<string, object> parameters = new Dictionary<string, object>
@@ -45,7 +36,7 @@ public class Character : MonoBehaviour
     public void OnMove(InputValue value)
     {
         var v = value.Get<Vector2>();
-
+        print(v);
         rb.linearVelocity = new Vector2(v.x * speed, v.y * speed);
     }
 }
