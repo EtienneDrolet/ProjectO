@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 812eb2d5bbd816a48881f4889f44250c, type: 3}
   m_Name: CH_Greg
   m_EditorClassIdentifier: Assembly-CSharp::CharacterInfo
-  CH_Name: 
-  CH_Sprite: {fileID: 0}
-  CH_Class: 
-  CH_Ability1_Name: 
-  CH_Ability2_Name: 
-  CH_Ability1_Description: 
-  CH_Ability2_Description: 
+  CH_Name: Greg
+  CH_Sprite: {fileID: 21300000, guid: 376185c89a3760742a353036155f4b14, type: 3}
+  CH_Class: Tank
+  CH_Ability1_Name: 'Y''all Better Survive This One :'
+  CH_Ability2_Name: 'I''m Better Than You :'
+  CH_Ability1_Description: Provides Damage Restistance to The Whole Group
+  CH_Ability2_Description: Makes The User Invulnerable To The Next Instance Of Damage

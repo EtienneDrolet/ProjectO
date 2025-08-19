@@ -1,13 +1,12 @@
-using UnityEditor.SearchService;
 using UnityEngine;
-using UnityEngine.Rendering;
 using UnityEngine.SceneManagement;
 
 public class OnButtonPressed : MonoBehaviour
 {
     [SerializeField] private int CharacterSelectSceneIndex;
-    [SerializeField] private int PlayingSceneIndex; 
-    [SerializeField] private CharacterInfo SelectedCH; 
+    [SerializeField] private int PlayingSceneIndex;
+    [SerializeField] private CH_Showcase_Manager ShowcaseManager;
+
 
     public void On_CharacterSelect_Button_Down()
     {
@@ -27,7 +26,7 @@ public class OnButtonPressed : MonoBehaviour
 
    public void On_Character_Button_Down(CharacterInfo SelectedCH)
     {
-        
+        ShowcaseManager.ChangeCharacterOnDisplay(SelectedCH);
     }
 
 }

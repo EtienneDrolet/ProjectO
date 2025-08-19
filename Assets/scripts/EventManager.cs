@@ -5,6 +5,7 @@ using UnityEngine;
 public enum EEvents
 {
     PLYR_HP_CHANGE
+
 }
 
 

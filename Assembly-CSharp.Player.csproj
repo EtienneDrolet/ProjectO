@@ -59,14 +59,20 @@
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\6000.2.0f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.SourceGenerators.dll" />
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\6000.2.0f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\6000.2.0f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.UIToolkit.SourceGenerator.dll" />
-    <Analyzer Include="C:\Users\girar\Documents\GitHub\ProjectO\Library\PackageCache\com.unity.dt.app-ui@7b87c8225c06\Runtime\SourceGenerators\netstandard2.0\EnumToLowerCase.dll" />
-    <Analyzer Include="C:\Users\girar\Documents\GitHub\ProjectO\Library\PackageCache\com.unity.ai.inference@4ac711cab9a3\Runtime\Core\SourceGenerator\SourceGenerators.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\scripts\Tank.cs" />
     <Compile Include="Assets\Script\OnButtonPressed.cs" />
+    <Compile Include="Assets\scripts\FindMidPoint.cs" />
+    <Compile Include="Assets\scripts\Character.cs" />
     <Compile Include="Assets\Script\CharacterInfo.cs" />
-    <Compile Include="Assets\Character.cs" />
+    <Compile Include="Assets\scripts\DPS.cs" />
+    <Compile Include="Assets\scripts\Healer.cs" />
     <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />
+    <Compile Include="Assets\scripts\UI\HPbar.cs" />
+    <Compile Include="Assets\scripts\EventManager.cs" />
+    <Compile Include="Assets\Script\CH_Showcase_Manager.cs" />
+    <Compile Include="Assets\scripts\DamagingArea.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
@@ -412,10 +418,6 @@
     </Reference>
     <Reference Include="System.Runtime.CompilerServices.Unsafe">
       <HintPath>Library\PackageCache\com.unity.collections@d49facba0036\Unity.Collections.Tests\System.Runtime.CompilerServices.Unsafe\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Newtonsoft.Json">
-      <HintPath>Library\PackageCache\com.unity.nuget.newtonsoft-json@74deb55db2a0\Runtime\AOT\Newtonsoft.Json.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="netstandard">
@@ -936,6 +938,10 @@
       <Project>{C379BA14-76F2-FE20-7B46-B515CACA7AEE}</Project>
       <Name>Unity.VisualScripting.Core.Player</Name>
     </ProjectReference>
+    <ProjectReference Include="Unity.Cinemachine.Player.csproj">
+      <Project>{29021697-6709-703B-B829-4E246898F095}</Project>
+      <Name>Unity.Cinemachine.Player</Name>
+    </ProjectReference>
     <ProjectReference Include="Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.Player.csproj">
       <Project>{441DF270-3B89-51AE-804D-3A8F5E7F207B}</Project>
       <Name>Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.Player</Name>
@@ -963,10 +969,6 @@
     <ProjectReference Include="Unity.Mathematics.Player.csproj">
       <Project>{522D1010-3532-8C51-BC96-D03A3AC5F7A7}</Project>
       <Name>Unity.Mathematics.Player</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.Serialization.Player.csproj">
-      <Project>{800B5F18-4560-9A32-5078-A020C8B2A9E2}</Project>
-      <Name>Unity.Serialization.Player</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.RenderPipelines.Universal.Shaders.Player.csproj">
       <Project>{843A39B7-1171-47DA-499D-150CAF174CEA}</Project>
@@ -1000,10 +1002,6 @@
       <Project>{3AFEEB58-BB92-A5EA-B738-A25EFB87F7BA}</Project>
       <Name>Unity.RenderPipelines.Universal.Config.Runtime.Player</Name>
     </ProjectReference>
-    <ProjectReference Include="Unity.AppUI.Player.csproj">
-      <Project>{452E808B-FCB5-55A0-B1EC-8D82B6B582F7}</Project>
-      <Name>Unity.AppUI.Player</Name>
-    </ProjectReference>
     <ProjectReference Include="Unity.RenderPipeline.Universal.ShaderLibrary.Player.csproj">
       <Project>{865D4600-5A9C-AB11-9A83-B9C89D043B57}</Project>
       <Name>Unity.RenderPipeline.Universal.ShaderLibrary.Player</Name>
@@ -1012,13 +1010,9 @@
       <Project>{A238B535-BFCB-E33E-271C-FDD5420F3DF9}</Project>
       <Name>Unity.InputSystem.Player</Name>
     </ProjectReference>
-    <ProjectReference Include="Unity.AppUI.Redux.Player.csproj">
-      <Project>{C7644021-6D33-9362-3E02-8980BDD81C04}</Project>
-      <Name>Unity.AppUI.Redux.Player</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.InferenceEngine.Player.csproj">
-      <Project>{959257C7-0DF4-7AC6-BA29-4DB9845408C6}</Project>
-      <Name>Unity.InferenceEngine.Player</Name>
+    <ProjectReference Include="Unity.Splines.Player.csproj">
+      <Project>{C228F38E-523D-A99B-94BA-2D817E1CEF77}</Project>
+      <Name>Unity.Splines.Player</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

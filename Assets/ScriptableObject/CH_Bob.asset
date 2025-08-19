@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 812eb2d5bbd816a48881f4889f44250c, type: 3}
   m_Name: CH_Bob
   m_EditorClassIdentifier: Assembly-CSharp::CharacterInfo
-  CH_Name: 
-  CH_Sprite: {fileID: 0}
-  CH_Class: 
-  CH_Ability1_Name: 
-  CH_Ability2_Name: 
-  CH_Ability1_Description: 
-  CH_Ability2_Description: 
+  CH_Name: Bob
+  CH_Sprite: {fileID: 21300000, guid: 5726891661cd18a469671fc9d326bac1, type: 3}
+  CH_Class: DPS
+  CH_Ability1_Name: 'You Guys Got It, Right? :'
+  CH_Ability2_Name: 'AH, Got''cha :'
+  CH_Ability1_Description: Improves Allies Damage
+  CH_Ability2_Description: Interrupts The Boss's Cast
